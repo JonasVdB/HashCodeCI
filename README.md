@@ -7,6 +7,7 @@ Continuous submission upload and result checking
 - python libraries: requests, polling, configparser
 
 Can easily be installed with pipenv: ```pipenv install```
+(How to install pipenv: ```pip install pipenv``` or ```pip3 install pipenv```)
 
 
 ## How to use
