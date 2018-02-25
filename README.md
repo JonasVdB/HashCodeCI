@@ -7,6 +7,7 @@ Continuous submission upload and result checking in the Google Hashcode coding c
 - python libraries: requests, polling, configparser
 
 This can easily be installed with pipenv: ```pipenv install```
+
 (How to install pipenv: ```pip install pipenv``` or ```pip3 install pipenv```)
 
 
@@ -16,7 +17,11 @@ This can easily be installed with pipenv: ```pipenv install```
 in settings.cfg, update the following info:
 
 ##### Authentication
-A token that is valid for 1 hour can be extracted when analysing the contents of a packet in google chrome, when submittig a solution via the hashcode-judge page. (TODO: use *oauthclient* library for acquiring token )
+A token that is valid for 1 hour can be extracted when analysing the contents of a packet in google chrome, when submittig a solution via the hashcode-judge page or when loading the page.
+
+The token can be found in the **authorization** field of the **request header** of calls to *https://hashcode-judge.appspot.com/api/judge/v1/*
+
+(TODO: use *oauthclient* library for acquiring token )
 
 ##### Round-specific
 Edit the ```round_id``` field in accordance to the round ID in the url bar.
@@ -53,3 +58,9 @@ dataset3 = 5690701543112704
 
 Example: ```python submit.py 1 --solution=README.md```
 This submits the README.md file as solution for dataset 1.
+
+### Future improvements
+Possible improvements:
+- use oauth for acquiring the token, instead of manually retrieving it
+- integrate some git workflow for succesfull (label/ commit-message & push?)
+- integrate the generation of solution-files in the workflow (python or bash?)
