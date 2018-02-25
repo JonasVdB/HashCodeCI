@@ -16,7 +16,11 @@ This can easily be installed with pipenv: ```pipenv install```
 in settings.cfg, update the following info:
 
 ##### Authentication
-A token that is valid for 1 hour can be extracted when analysing the contents of a packet in google chrome, when submittig a solution via the hashcode-judge page. (TODO: use *oauthclient* library for acquiring token )
+A token that is valid for 1 hour can be extracted when analysing the contents of a packet in google chrome, when submittig a solution via the hashcode-judge page or when loading the page.
+
+The token can be found in the **authorization** field of the **request header** of calls to *https://hashcode-judge.appspot.com/api/judge/v1/*
+
+(TODO: use *oauthclient* library for acquiring token )
 
 ##### Round-specific
 Edit the ```round_id``` field in accordance to the round ID in the url bar.
