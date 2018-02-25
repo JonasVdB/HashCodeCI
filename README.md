@@ -57,3 +57,8 @@ dataset3 = 5690701543112704
 
 Example: ```python submit.py 1 --solution=README.md```
 This submits the README.md file as solution for dataset 1.
+
+### Future improvements
+Possible improvements:
+- use oauth for acquiring the token, instead of manually retrieving it
+- integrate some git workflow for succesfull (label/ commit-message & push?)
