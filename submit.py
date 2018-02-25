@@ -147,7 +147,7 @@ if __name__ == '__main__':
                 print("\n=== SUBMISSION REPORT FOR DATASET "+str(solution_id) + " ===")
                 if score.get("best"):
                     print("You have increased your top score!!")
-                    shutil.move(source_zipfile+".zip", topscore_dir + "/"+source_zipfile+".zip") # MOVE TO TOPSCORES
+                    shutil.move(source_zipfile+".zip", topscore_dir + "/"+str(solution_id)+"-[" + score.get("score") + "].zip") # MOVE TO TOPSCORES
                 if not score.get("valid"):
                     print("The submitted solution was declared invalid.")
                     os.remove(source_zipfile+".zip") # cleanup
