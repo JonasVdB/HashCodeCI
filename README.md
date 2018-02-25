@@ -48,4 +48,8 @@ dataset2 = 5726181865291776
 dataset3 = 5690701543112704
 ```
 ### Usage
-```python sync.py [ID]``` with ID being the dataset ID (0,1,2,3)
+```python sync.py [datasetID] [--solution=solutionfile_path]```
+
+
+Example: ```python submit.py 1 --solution=README.md```
+This submits the README.md file as solution for dataset 1.
