@@ -7,6 +7,7 @@ Continuous submission upload and result checking in the Google Hashcode coding c
 - python libraries: requests, polling, configparser
 
 This can easily be installed with pipenv: ```pipenv install```
+
 (How to install pipenv: ```pip install pipenv``` or ```pip3 install pipenv```)
 
 
@@ -62,3 +63,4 @@ This submits the README.md file as solution for dataset 1.
 Possible improvements:
 - use oauth for acquiring the token, instead of manually retrieving it
 - integrate some git workflow for succesfull (label/ commit-message & push?)
+- integrate the generation of solution-files in the workflow (python or bash?)
